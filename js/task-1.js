@@ -20,10 +20,9 @@
 
 
 const categoriesList = document.querySelectorAll(".item");
+console.log(`Number of categories: ${categoriesList.length}`);
 
 categoriesList.forEach(category => {
-    const numberOfCategories = categoriesList.length;
-    console.log(`Number of categories: ${numberOfCategories}`);
     const title = category.querySelector("h2").textContent;
     console.log(`Category: ${title}`);
     const itemsCount = category.querySelectorAll("li").length;
